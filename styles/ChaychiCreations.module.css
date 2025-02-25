@@ -1,0 +1,59 @@
+.container {
+  padding: 6rem 2rem;
+  background: #ffffff;
+}
+
+.header {
+  margin-bottom: 6rem;
+}
+
+.title {
+  font-size: 3.5rem;
+  font-weight: 300;
+  color: #000;
+  margin-bottom: 1.5rem;
+  letter-spacing: -1px;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #666;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+}
+
+.card {
+  border: none;
+  border-radius: 0;
+  transition: transform 0.2s ease;
+  background: #fff;
+  padding: 2rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.card:hover {
+  transform: translateX(10px);
+}
+
+.cardTitle {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #000;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.5px;
+}
+
+.cardBody {
+  padding: 2rem;
+}
+
+.cardText {
+  color: #666;
+  line-height: 1.6;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.servicesGrid {
+  gap: 0;
+}

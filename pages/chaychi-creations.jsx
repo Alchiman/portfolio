@@ -31,14 +31,12 @@ const services = [
   },
 ];
 
-const Projects = () => {
+const ChaychiCreations = () => {
   return (
     <Container className={styles.container}>
       <div className={styles.header}>
         <h1 className={styles.title}>Chaychi Creations</h1>
-        <p className={styles.subtitle}>
-          Where vision meets execution: Design. Build. Transform.
-        </p>
+        <p className={styles.subtitle}>Design. Build. Transform.</p>
       </div>
       <Row className={styles.servicesGrid}>
         {services.map((service, index) => (
@@ -54,4 +52,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default ChaychiCreations;
