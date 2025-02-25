@@ -23,9 +23,7 @@ jobs:
         run: npm install
 
       - name: Build & Export
-        run: |
-          npm run build
-          npm run export
+        run: npm run build
 
       # Next.js relies on a `_next` folder
       # https://github.blog/2009-12-29-bypassing-jekyll-on-github-pages/
