@@ -14,21 +14,24 @@ function MyApp({ Component, pageProps }) {
       </Head>
       <div className="nav">
         <Container>
-          <Navbar variant="dark">
-            <Nav>
-              <Link href="/">
-                <a className="nav-link light">Home</a>
-              </Link>
-              <Link href="/about">
-                <a className="nav-link">About</a>
-              </Link>
-              <Link href="projects">
-                <a className="nav-link"> Projects</a>
-              </Link>
-              <Link href="contact">
-                <a className="nav-link">Contact</a>
-              </Link>
-            </Nav>
+          <Navbar variant="dark" expand="lg">
+            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+            <Navbar.Collapse id="basic-navbar-nav">
+              <Nav className="me-auto">
+                <Link href="/" passHref legacyBehavior>
+                  <Nav.Link>Home</Nav.Link>
+                </Link>
+                <Link href="/about" passHref legacyBehavior>
+                  <Nav.Link>About</Nav.Link>
+                </Link>
+                <Link href="/projects" passHref legacyBehavior>
+                  <Nav.Link>Projects</Nav.Link>
+                </Link>
+                <Link href="/contact" passHref legacyBehavior>
+                  <Nav.Link>Contact</Nav.Link>
+                </Link>
+              </Nav>
+            </Navbar.Collapse>
           </Navbar>
         </Container>
       </div>
