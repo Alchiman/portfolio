@@ -36,7 +36,10 @@ h1 {
 }
 
 .profile__img {
-  height: 600px;
+  width: 100%;
+  height: auto;
+  max-width: 600px;
+  object-fit: contain;
 }
 
 .nav {
