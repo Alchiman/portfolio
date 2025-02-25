@@ -31,7 +31,10 @@ jobs:
       - name: Support GitHub Pages
         run: |
           touch out/.nojekyll
-          mv out/404/index.html out/404.html && rm -r out/404
+          # Only move 404 if it exists in the old location
+          if [ -f "out/404/index.html" ]; then
+            mv out/404/index.html out/404.html && rm -r out/404
+          fi
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@4.1.4
         with:
