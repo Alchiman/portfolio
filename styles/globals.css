@@ -31,6 +31,13 @@ h1 {
   padding-top: 6rem;
 }
 
+@media (max-width: 768px) {
+  .main .row {
+    flex-direction: column-reverse;
+    gap: 1rem; /* Adjust the gap value as needed */
+  }
+}
+
 .img__col {
   text-align: center;
 }
